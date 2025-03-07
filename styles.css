@@ -1,11 +1,11 @@
 /* variables.css */
 :root {
 
-    --dark: #6789A3;
-    --darker: #2c465a;
-    --light: #B3D2EA;
+    --dark: #25455d;
+    --darker: #172f42;
+    --light: #9bcff7;
     --lighter: #e9f6ff;
-    --red: #522e63;
+    --red: #cf79f7;
 }
 
 html, body {
