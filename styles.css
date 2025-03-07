@@ -1,11 +1,11 @@
 /* variables.css */
 :root {
 
-    --dark: #25455d;
+    --dark: #4e99d2;
     --darker: #172f42;
-    --light: #9bcff7;
+    --light: #d2e4f2;
     --lighter: #e9f6ff;
-    --red: #cf79f7;
+    --red: #6b3087;
 }
 
 html, body {
@@ -65,7 +65,7 @@ section {
 }
 
 .light h1 {
-    color: var(--dark);
+    color: var(--darker);
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
@@ -80,8 +80,10 @@ section {
 }
 
 .light {
+    /* background-color: #9bd0f8; */
+    color: #25455d;
     background-color: var(--light);
-    color: var(--dark);
+    /* color: var(--darker); */
 }
 
 .dark {
@@ -89,7 +91,6 @@ section {
     color: var(--light);
 }
 
-#bio,
 #dev,
 #publi,
 #forma,
@@ -101,6 +102,15 @@ section {
     align-items: left;
     width: 100vw;
     font-size: 1.1em;
+}
+
+#bio {
+padding-left: 22vw;
+padding-right: 22vw;
+text-align: left;
+align-items: center;
+width: 100vw;
+font-size: 1.1em;
 }
 
 #bio p{
@@ -122,6 +132,7 @@ section {
             justify-content: space-between;
             padding: 2px 0;
             position: relative;
+            line-height: 1.2em;
         }
 
 .tag {
@@ -130,12 +141,12 @@ section {
     width: 150px; /* Largeur fixe pour les tags */
 }
 
-
-
 .content {
     flex: 1;
     text-align: left;
     padding-left: 10px;
+    padding-bottom: 10px;
+    /* line-height: 1.2em; */
         }
 .sub-content {
             font-size: 0.8em;
