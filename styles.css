@@ -2,11 +2,12 @@
 :root {
     --gradient : linear-gradient(31deg, rgba(35,36,0,1) 0%, rgba(255,250,224,1) 0%, rgba(255,255,239,1) 100%);
     --dark: #4e99d2;
-    --darker: #72a7d7;
-    --shadow: #21248b;
+    --darker: #23639f;
+    /* --shadow: #21248b; */
     --light: #e7f4ff;
     --lighter: #e9f6ff;
     --red: #6b3087;
+    --contour: #e6f3fe;
 }
 
 html, body {
@@ -63,7 +64,11 @@ section {
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
-    text-shadow: -3px 3px 1px #98d9ff;
+    text-shadow:-0.5px -0.5px 0 var(--contour),
+                0.5px -0.5px 0 var(--contour),
+               -0.5px 0.5px 0 var(--contour),
+                0.5px 0.5px 0 var(--contour);
+                /* -4px 5px 15px #98b5c5; */
     /* text-shadow: 0px 0px 0  #21248b,
                  1px 1px 0  #21248b,
                  2px 2px 0  #21248b,
@@ -78,12 +83,13 @@ section {
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
-    color: var(--darker);
+    color: var(--dark);
 }
 
 .light {
     /* background-color: var(--gradient); */
-    color: #25455d;
+    /* color: #25455d; */
+    color: var(--darker);
     background-color: var(--light);
     /* color: var(--darker); */
 }
@@ -181,12 +187,12 @@ footer-component {
   @media screen and (max-width: 600px) {
     
     #bio {
+        padding: 10vw;
+        padding-top: 20vw ;
         font-size: 1, 5em;
-        padding-left: 5vw;
-        padding-right: 5vw;
     }
 
-    #bio,
+    /* #bio, */
     #dev,
     #publi,
     #forma,
@@ -194,7 +200,7 @@ footer-component {
     #contact{
         /* width: 80vw; */
         padding-left: 0vw;
-        padding-right: 0vw;
+        padding-right: 10vw;
         text-align: center;
         align-items: center;
         /* width: 100vw; */
