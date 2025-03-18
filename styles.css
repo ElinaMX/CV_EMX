@@ -1,17 +1,17 @@
 /* variables.css */
 :root {
-    --gradient : linear-gradient(31deg, rgba(35,36,0,1) 0%, rgba(255,250,224,1) 0%, rgba(255,255,239,1) 100%);
+    --gradient : linear-gradient(31deg, rgba(35,36,0,1) 0%, rgb(250, 247, 230) 0%, rgb(249, 249, 243) 100%);
+    --yellow: #faf7e6;
+    --light: #e7f4ff;
     --dark: #4e99d2;
     --darker: #23639f;
+    --highlight: #6b3087;
     /* --shadow: #21248b; */
-    --light: #e7f4ff;
-    --lighter: #e9f6ff;
-    --red: #6b3087;
-    --contour: #e6f3fe;
+    /* --contour: #e6f3fe; */
 }
 
 html, body {
-    background-color: var(--dark);
+    background-color: var(--light);
     color: var(--light);
     height: 100vh;
     width: 100vw;
@@ -33,7 +33,7 @@ a:hover {
 }
 
 a:visited {
-    color: var(--red);
+    color: var(--highlight);
   }
 
 a:link {
@@ -42,12 +42,37 @@ a:link {
 
 
 
-/* ================ SECTIONS ================ */
 
-.sections{
-    background: var(--gradient);
-    color: var(--dark);
+/* ================ COMPOENTS ================ */
+#nav{
+    background-color: var(--light); 
+    /* border-bottom-style: solid; */
+    /* border-color: var(--yellow); */
+    /* border-width: 1px; */
 }
+
+#bubbles {
+    width: 100vw;
+    height: 35vh;
+    display:block; 
+    font-family: 'Capriola', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    fill: var(--darker);
+    font-size: 2.5em;
+    text-align: center;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+
+#footer{
+    /* background-color: var(--dark);  */
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    font-size: small;
+    color: var(--darker);
+}
+
+/* ================ BIO & CONTACT ================ */
 
 section {
     padding-top: 2rem;
@@ -64,22 +89,38 @@ section {
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
-    text-shadow:-0.5px -0.5px 0 var(--contour),
-                0.5px -0.5px 0 var(--contour),
-               -0.5px 0.5px 0 var(--contour),
-                0.5px 0.5px 0 var(--contour);
-                /* -4px 5px 15px #98b5c5; */
-    /* text-shadow: 0px 0px 0  #21248b,
-                 1px 1px 0  #21248b,
-                 2px 2px 0  #21248b,
-                 3px 3px 0  #21248b,
-                 4px 4px 0  #21248b,
-                 5px 5px 0  #21248b,
-                 0px 0px 6px rgba(0,0,0,.2); */
- }
+}
 
-.dark h1 {
-    font-family: 'Bungee Shade', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+#bio {
+    text-align: left;
+    align-items: center;
+    font-size: large;
+    /* font-size: 1.1em; */
+}
+
+#bio p{
+    text-align: justify;
+}
+
+#contact p{
+    text-align: center;
+    font-size: large;
+}
+
+
+
+/* ================ SECTIONS ================ */
+
+.sections {
+    background: var(--gradient);
+    color: var(--dark);
+    text-align: left;
+    align-items: left;
+    font-size: large;
+}
+
+.sections h1 {
+    font-family: 'Capriola', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
@@ -94,39 +135,8 @@ section {
     /* color: var(--darker); */
 }
 
-.dark {
-    /* background: var(--gradient); */
-    /* background-color: var(--dark); */
-    /* color: var(--light); */
-}
 
-#dev,
-#publi,
-#forma,
-#com,
-#contact {
-    text-align: left;
-    align-items: left;
-    /* width: 80vw; */
-    font-size: 1.1em;
-}
 
-#bio {
-    /* padding-left: 22vw; */
-    /* padding-right: 22vw; */
-    text-align: left;
-    align-items: center;
-    /* width: 80vw; */
-    font-size: 1.1em;
-}
-
-#bio p{
-    text-align: justify;
-}
-
-#contact p{
-    text-align: center;
-}
 
 .document-list {
     display: flex;
@@ -170,14 +180,7 @@ section {
     fill: var(--dark);
 }
 
-/* ================ FOOTER ================ */
-footer,
-footer-component {
-    background-color: var(--dark);
-        position: relative;
-        margin-top: 50px;
-        width: 100vw;
-}
+
 
 
   /* ======================================= */
