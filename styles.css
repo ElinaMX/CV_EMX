@@ -190,10 +190,17 @@ section {
         /* font-size: small; */
         line-height: 3vw; 
         font-weight: bold;
-        background-color: #e7f4ff90; 
+        background-color: #e7f4ff; 
     }
 
-     #navbarNav a:hover {
+    /* #navbarNav {
+        padding: 5vw;
+        line-height: 3vw; 
+        font-weight: bold;
+        background-color: #e7f4ff90; 
+    } */
+
+    #navbarNav a:hover {
         background-color: var(--darker);
         color: var(--light);
         padding-left: 2%;
@@ -207,8 +214,8 @@ section {
     } 
     
     
-      #bio {
-          padding: 10vw;
+    #bio {
+        padding: 10vw;
         padding-top: 20vw ;
         font-size: 1, 5em;
     }
